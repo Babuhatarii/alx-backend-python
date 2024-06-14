@@ -10,7 +10,7 @@ from typing import AsyncGenerator
 
 async def async_generator() -> AsyncGenerator[float, None]:
     """
-    This process is repeated 10 times.
+    Coroutine that yields a random number between 0 and 10 after each
     """
     for _ in range(10):
         await asyncio.sleep(1)
